@@ -9,6 +9,7 @@ async function uploadFile(buffer){
         file:buffer.toString("base64"),
         fileName:"image.jpg"
     })
+    
     console.log(result);
     return result;
 }

@@ -23,6 +23,7 @@ app.post("/create-post",upload.single("image"),async (req,res)=>{
     return res.status(201).json({
         message:"posted image",
         post
+        
     })
 
 })

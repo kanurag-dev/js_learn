@@ -17,43 +17,100 @@ body {
     min-height: 100vh;
 }
 
-/* Create Post */
+/* ================= HEADER ================= */
+
+.header {
+    width: 100%;
+    padding: 15px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #222;
+}
+
+.header h2 {
+    color: white;
+}
+
+.header nav {
+    display: flex;
+    gap: 20px;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.header a:hover {
+    text-decoration: underline;
+}
+
+/* ================= CREATE POST ================= */
 
 .create-post-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
 
-    min-height: 100vh;
+    min-height: calc(100vh - 60px);
     width: 100%;
+
+    gap: 20px;
+}
+
+.create-post-section form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+    width: 300px;
 }
 
 .create-post-section input {
-    width: 300px;
-    margin: 10px 0;
+    width: 100%;
     padding: 10px;
 
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
-/* Feed */
+.create-post-section button {
+    padding: 10px;
+
+    border: none;
+    border-radius: 4px;
+
+    background-color: #222;
+    color: white;
+
+    cursor: pointer;
+}
+
+.create-post-section button:hover {
+    background-color: #444;
+}
+
+/* ================= FEED ================= */
 
 .feed-section {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     gap: 20px;
 
     width: 100%;
-    min-height: 100vh;
+    min-height: calc(100vh - 60px);
 
     padding: 20px;
 }
 
-/* Post Card */
+/* ================= POST CARD ================= */
 
 .post-card {
     width: 500px;
@@ -72,10 +129,10 @@ body {
 
     width: 100%;
     max-height: 600px;
+
     object-fit: cover;
 
     border-radius: 8px;
-    margin-top: 10px;
 }
 
 .post-card p {
