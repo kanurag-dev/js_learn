@@ -13,5 +13,6 @@ async function uploadFile(buffer){
     
     console.log(result);
     return result;
+    
 }
 module.exports=uploadFile;
