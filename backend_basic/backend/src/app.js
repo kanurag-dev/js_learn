@@ -25,6 +25,8 @@ app.post("/create-post",upload.single("image"),async (req,res)=>{
         message:"posted image",
         post
     })
+
+    
 })
 
 app.get("/feed",async (req,res)=>{
